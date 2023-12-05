@@ -1,0 +1,48 @@
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 50px;
+  color: white;
+  background-color: hsl(260, 8%, 14%);
+  width: 100vw;
+  padding: 10px;
+}
+
+.links-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+}
+
+.link-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.link-list ul {
+  list-style: none;
+}
+.link-list ul li {
+  font-size: 16px;
+  color: hsl(0, 0%, 75%);
+  cursor: pointer;
+}
+
+.link-list h2 {
+  font-size: 20px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+@media (max-width: 450px) {
+  footer {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,54 @@
+.url-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+
+  background-color: hsl(257deg 37.02% 96.25%);
+}
+
+.url-input-box {
+  border: 1px solid black;
+  width: 70vw;
+  background-image: url("../../images/bg-boost-desktop.svg");
+  background-color: hsl(257, 27%, 26%);
+  background-size: cover;
+  height: 15vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.url-input-box input {
+  width: 80%;
+  height: 35%;
+  border-radius: 7px;
+  font-size: 18px;
+  outline-color: red;
+}
+
+.url-input-box button {
+  height: 35%;
+  width: 12%;
+  background-color: hsl(180, 66%, 49%);
+  color: white;
+  cursor: pointer;
+  font-size: 17px;
+  border-radius: 7px;
+  border: none;
+  font-weight: bold;
+}
+
+@media (max-width: 450px) {
+  .url-input-box {
+    flex-direction: column;
+  }
+
+  .url-input-box button {
+    width: 80%;
+    font-size: 20px;
+  }
+}

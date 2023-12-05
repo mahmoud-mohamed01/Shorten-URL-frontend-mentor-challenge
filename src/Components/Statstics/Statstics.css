@@ -1,0 +1,96 @@
+.stat-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  background-color: hsl(257deg 37.02% 96.25%);
+}
+
+.boxs-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80vw;
+  gap: 30px;
+}
+.stat-text {
+  text-align: center;
+}
+.stat-text h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.stat-text p {
+  font-size: 18px;
+  color: hsl(257, 7%, 63%);
+  font-weight: bold;
+}
+
+.box {
+  background-color: white;
+  padding: 30px;
+}
+
+.box h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.box .icon {
+  border: 1px solid black;
+  width: fit-content;
+  border-radius: 50%;
+  padding: 20px;
+  background-color: hsl(257, 27%, 26%);
+  position: relative;
+  top: -50px;
+}
+
+.boost-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  background-image: url("../../images//bg-boost-desktop.svg");
+  background-size: cover;
+  width: 100vw;
+  background-color: hsl(257, 27%, 26%);
+  text-align: center;
+  padding: 30px;
+}
+
+.boost-box h1 {
+  color: white;
+  margin-left: 10px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.boost-box button {
+  width: 150px;
+  height: 40px;
+  border-radius: 15px;
+  color: white;
+  background-color: hsl(180, 66%, 49%);
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  padding: 2px;
+}
+
+@media (max-width: 450px) {
+  .boxs-container {
+    flex-direction: column;
+  }
+
+  .boost-box {
+    padding: 20px;
+  }
+  .boost-box h1 {
+    font-size: 30px;
+    margin-left: 20px;
+  }
+}
